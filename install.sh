@@ -36,7 +36,7 @@ fi
 
 SCRIPT_GROUP="$(id -gn ${SCRIPT_USER})"
 
-CLEANUP_PACKAGES="wolfram sonic-pi openbox nodered chromium-browser desktop-base gnome-desktop3-data libgnome-desktop epiphany-browser-data epiphany-browser nuscratch scratch wiringpi libreoffice"
+CLEANUP_PACKAGES="wolfram sonic-pi openbox nodered gnome-desktop3-data libgnome-desktop epiphany-browser-data epiphany-browser nuscratch scratch libreoffice realvnc-vnc-server libpam-chksshpwd"
 PYTHON_LIBS="python3-pip python3-dev python3-venv"
 
 PIP_MODULES=""
