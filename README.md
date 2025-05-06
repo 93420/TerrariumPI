@@ -182,7 +182,7 @@ You can skip the manual installation part.
 2. Install git \
    `sudo apt -y install git`
 3. Clone this repository and submodules! \
-   `git clone --depth 1 https://github.com/theyosh/TerrariumPI.git`
+   `git clone --depth 1 https://github.com/93420/TerrariumPI.git`
 4. Enter the new TerrariumPI folder \
    `cd TerrariumPI`
 5. Run the installer script and wait \
