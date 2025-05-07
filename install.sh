@@ -164,9 +164,6 @@ if [ "${CLEANUP}" -eq 1 ]; then
 fi
 
 # Install required packages to get the terrarium software running
-debconf-apt-progress -- apt-get -y autoremove
-debconf-apt-progress -- apt-get -y update
-debconf-apt-progress -- apt-get -y upgrade
 debconf-apt-progress -- apt-get -y install ${APT_PACKAGES}
 
 # Basic config:
