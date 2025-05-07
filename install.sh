@@ -36,7 +36,7 @@ fi
 
 SCRIPT_GROUP="$(id -gn ${SCRIPT_USER})"
 
-CLEANUP_PACKAGES="wolfram sonic-pi openbox nodered gnome-desktop3-data libgnome-desktop epiphany-browser-data epiphany-browser nuscratch scratch libreoffice realvnc-vnc-server libpam-chksshpwd"
+CLEANUP_PACKAGES="wolfram sonic-pi openbox nodered epiphany-browser-data epiphany-browser nuscratch scratch libreoffice realvnc-vnc-server libpam-chksshpwd"
 PYTHON_LIBS="python3-pip python3-dev python3-venv"
 
 PIP_MODULES=""
@@ -65,7 +65,6 @@ if [ "${OS}" == "buster" ]; then
   PIP_MODULES="${PIP_MODULES//requests==+([^ ])/requests==2.31.0}"
 
   PIP_MODULES="${PIP_MODULES//python-kasa==+([^ ])/python-kasa==0.5.1}"
-  PIP_MODULES="${PIP_MODULES//meross-iot==+([^ ])/meross-iot==0.4.7.5}"
   PIP_MODULES="${PIP_MODULES//pywemo==+([^ ])/pywemo==0.9.2}"
 
   PIP_MODULES="${PIP_MODULES//Adafruit-Blinka==+([^ ])/Adafruit-Blinka==8.43.0}"
@@ -74,8 +73,6 @@ if [ "${OS}" == "buster" ]; then
   PIP_MODULES="${PIP_MODULES//packaging==+([^ ])/packaging==24.0}"
 
   PIP_MODULES="${PIP_MODULES//pyfiglet==+([^ ])/pyfiglet==0.8.post1}"
-
-  PIP_MODULES="${PIP_MODULES//luma.oled==+([^ ])/luma.oled==3.13.0}"
 
   PIP_MODULES="${PIP_MODULES//python-telegram-bot\[socks,http2\]==+([^ ])/python-telegram-bot\[socks,http2\]==20.3}"
 
